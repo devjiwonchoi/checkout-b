@@ -12,8 +12,15 @@
   "commands": [
     {
       "name": "index",
-      "title": "checkout -b",
-      "subtitle": "Generate a new branch name",
+      "title": "Generate New Branch Name",
+      "subtitle": "Checkout B",
+      "description": "One click away from `git checkout -b <new-branch>`",
+      "mode": "view"
+    },
+    {
+      "name": "random",
+      "title": "Generate Random Branch Name",
+      "subtitle": "Checkout B",
       "description": "One click away from `git checkout -b <new-branch>`",
       "mode": "view"
     }
