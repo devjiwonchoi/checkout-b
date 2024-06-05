@@ -24,7 +24,10 @@ export default function Random() {
     <Form
       actions={
         <ActionPanel>
-          <Action.SubmitForm onSubmit={handleSubmit} />
+          <Action.SubmitForm
+            title="Branch Name to Clipboard"
+            onSubmit={handleSubmit}
+          />
         </ActionPanel>
       }
     >
