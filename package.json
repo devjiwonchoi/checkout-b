@@ -2,13 +2,13 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "raycast-checkout-b",
   "title": "Checkout B",
-  "description": "One click away from `git checkout -b <new-branch>`",
+  "license": "MIT",
+  "description": "Raycast extension for creating a branch name for your `git checkout -b`",
   "icon": "command-icon.png",
   "author": "devjiwonchoi",
   "categories": [
     "Developer Tools"
   ],
-  "license": "MIT",
   "commands": [
     {
       "name": "index",
