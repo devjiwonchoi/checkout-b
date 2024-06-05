@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "raycast-checkout-b",
-  "title": "raycast-checkout-b",
+  "title": "Checkout B",
   "description": "One click away from `git checkout -b <new-branch>`",
   "icon": "command-icon.png",
   "author": "devjiwonchoi",
@@ -12,16 +12,16 @@
   "commands": [
     {
       "name": "index",
-      "title": "Generate New Branch Name",
+      "title": "New Branch Name",
       "subtitle": "Checkout B",
-      "description": "One click away from `git checkout -b <new-branch>`",
+      "description": "Create a new branch name for your `git checkout -b`",
       "mode": "view"
     },
     {
       "name": "random",
-      "title": "Generate Random Branch Name",
+      "title": "Random Branch Name",
       "subtitle": "Checkout B",
-      "description": "One click away from `git checkout -b <new-branch>`",
+      "description": "Create a random branch name for your `git checkout -b`",
       "mode": "view"
     }
   ],
