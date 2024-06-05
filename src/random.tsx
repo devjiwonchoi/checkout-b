@@ -1,10 +1,10 @@
-import { Form, ActionPanel, Action, showToast, Clipboard } from "@raycast/api";
+import { Form, ActionPanel, Action, showToast, Clipboard } from '@raycast/api'
 
 type Values = {
-  prefix: string;
-  length: string;
-  includeGitCommand: boolean;
-};
+  prefix: string
+  length: string
+  includeGitCommand: boolean
+}
 
 export default function Random() {
   const handleSubmit = ({ prefix, length, includeGitCommand }: Values) => {
