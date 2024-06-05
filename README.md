@@ -1,3 +1,3 @@
-# raycast-checkout-b
+# checkout-b
 
-One click away from `git checkout -b <new-branch>`
+Raycast extension to create a branch name for your `git checkout -b`
