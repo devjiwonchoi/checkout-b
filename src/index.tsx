@@ -48,9 +48,20 @@ export default function Command() {
     >
       <Form.Dropdown id="branchType" title="Branch Type" storeValue>
         <Form.Dropdown.Item value="" title="-" />
-        <Form.Dropdown.Item value="feat/" title="feat" />
-        <Form.Dropdown.Item value="fix/" title="fix" />
-        <Form.Dropdown.Item value="refactor/" title="refactor" />
+        <Form.Dropdown.Item value="fix/" title="fix (bugs or issues)" />
+        <Form.Dropdown.Item value="feat/" title="feat (add new features)" />
+        <Form.Dropdown.Item
+          value="refactor/"
+          title="refactor (improve efficiency)"
+        />
+        <Form.Dropdown.Item
+          value="chore/"
+          title="chore (non-production changes)"
+        />
+        <Form.Dropdown.Item
+          value="docs/"
+          title="docs (add or modify documentation)"
+        />
       </Form.Dropdown>
       <Form.TextField
         id="description"
