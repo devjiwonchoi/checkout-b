@@ -6,6 +6,7 @@ type Values = {
   description: string
   snakeCase: boolean
   prefixDate: boolean
+  includeGitCommand: boolean
 }
 
 function slugify(content: string, separator: string) {
@@ -19,6 +20,7 @@ export default function Command() {
     description,
     snakeCase,
     prefixDate,
+    includeGitCommand,
   }: Values) => {
     const separator = snakeCase ? '_' : '-'
     const date = prefixDate
@@ -31,7 +33,9 @@ export default function Command() {
     }
 
     const branchName = slugify(content, separator)
-    Clipboard.copy(branchName)
+    const gitCommand = includeGitCommand ? 'git checkout -b ' : ''
+    const result = `${gitCommand}${branchName}`
+    Clipboard.copy(result)
     showToast({ title: branchName, message: 'Copied to your clipboard!' })
   }
 
